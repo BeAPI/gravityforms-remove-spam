@@ -58,7 +58,7 @@ On the **Spam** options page:
 
 ## Requirements
 
-- PHP **8.2** or higher
+- PHP **7.4** or higher
 - WordPress **5.0** or higher
 - Gravity Forms
 - ACF Pro
