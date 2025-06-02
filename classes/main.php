@@ -44,10 +44,6 @@ class Main {
 	 * @author Stéphane Gillot
 	 */
 	public function add_subpage() {
-		if ( ! is_main_site() ) {
-			return;
-		}
-
 		acf_add_options_sub_page( [
 			'page_title'  => 'Spam Options',
 			'menu_title'  => 'Spam',
