@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Gravity Forms Remove Spam
-Version: 1.0.2
+Version: 1.0.3
 Version Boilerplate: 2.2
 Plugin URI: https://beapi.fr
 Description: Remove spam entries from Gravity Forms based on option fields
@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 // Plugin constants
-define( 'GRAVITYFORMS_REMOVE_SPAM_VERSION', '1.0.2' );
+define( 'GRAVITYFORMS_REMOVE_SPAM_VERSION', '1.0.3' );
 define( 'GRAVITYFORMS_REMOVE_SPAM_MIN_PHP_VERSION', '7.4' );
 define( 'GRAVITYFORMS_REMOVE_SPAM_VIEWS_FOLDER_NAME', 'gravityforms-remove-spam' );
 
