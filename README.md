@@ -1,6 +1,6 @@
 # Gravity Forms Remove Spam for Gravity Forms
 
-**Version:** 1.0.2  
+**Version:** 1.0.3
 **Author:** Be API Technical team  
 **Plugin URI:** https://beapi.fr
 
@@ -21,7 +21,6 @@
 - **ACF options page:**
   - Adds a "Spam" subpage under the Gravity Forms menu (requires ACF Pro) to manage criteria.
 - **Multisite compatible:**
-  - Spam criteria are retrieved from the main site in a multisite environment.
 - **Translation ready:**
   - Textdomain automatically loaded from `/languages`.
 - **Security & robustness:**
