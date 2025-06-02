@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Gravity Forms Remove Spam plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gravity Forms Remove Spam 1.0.1\n"
+"Project-Id-Version: Gravity Forms Remove Spam 1.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gravityforms-remove-spam\n"
 "Last-Translator: Équipe technique <technique@beapi.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
