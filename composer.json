@@ -32,7 +32,7 @@
     },
     "autoload": {
       "psr-4": {
-        "BEA\\GF_Remove_Spam\\": "classes/"
+        "Gravityforms\\Remove_Spam\\": "classes/"
       }
     },
     "scripts": {
