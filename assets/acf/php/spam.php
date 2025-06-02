@@ -1,0 +1,68 @@
+<?php
+
+if( function_exists('acf_add_local_field_group') ):
+
+	acf_add_local_field_group(array(
+		'key' => 'group_6400d39c4a92f',
+		'title' => 'Spam Gravityforms',
+		'fields' => array(
+			array(
+				'key' => 'field_6400d3cc2e834',
+				'label' => 'Emails considered as spam',
+				'name' => 'spammy_email_addresses',
+				'type' => 'textarea',
+				'instructions' => 'Enter one email per line, separated by a comma',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'new_lines' => '',
+			),
+			array(
+				'key' => 'field_6400d49d2e835',
+				'label' => 'Links in content considered as spam',
+				'name' => 'spammy_link_in_content',
+				'type' => 'textarea',
+				'instructions' => 'Enter one link per line, separated by a comma',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'new_lines' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'options_page',
+					'operator' => '==',
+					'value' => 'acf-options-spam',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	));
+
+endif;
