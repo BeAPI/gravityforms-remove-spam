@@ -1,14 +1,14 @@
 <?php
 /*
-Plugin Name: BEA GF remove spam for Gravity Forms
+Plugin Name: Gravity Forms Remove Spam
 Version: 1.0.0
 Version Boilerplate: 2.2
 Plugin URI: https://beapi.fr
-Description: Remove spam entries from GravityForms based on option fields
+Description: Remove spam entries from Gravity Forms based on option fields
 Author: Be API Technical team
 Author URI: https://beapi.fr
 Domain Path: languages
-Text Domain: bea-gf-remove-spam
+Text Domain: gravityforms-remove-spam
 
 ----
 
@@ -36,21 +36,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 // Plugin constants
-define( 'BEA_GF_REMOVE_SPAM_VERSION', '1.0.0' );
-define( 'BEA_GF_REMOVE_SPAM_MIN_PHP_VERSION', '7.4' );
-define( 'BEA_GF_REMOVE_SPAM_VIEWS_FOLDER_NAME', 'bea-gf-remove-spam' );
+define( 'GRAVITYFORMS_REMOVE_SPAM_VERSION', '1.0.0' );
+define( 'GRAVITYFORMS_REMOVE_SPAM_MIN_PHP_VERSION', '7.4' );
+define( 'GRAVITYFORMS_REMOVE_SPAM_VIEWS_FOLDER_NAME', 'gravityforms-remove-spam' );
 
 // Plugin URL and PATH
-define( 'BEA_GF_REMOVE_SPAM_URL', plugin_dir_url( __FILE__ ) );
-define( 'BEA_GF_REMOVE_SPAM_DIR', plugin_dir_path( __FILE__ ) );
-define( 'BEA_GF_REMOVE_SPAM_PLUGIN_DIRNAME', basename( rtrim( dirname( __FILE__ ), '/' ) ) );
+define( 'GRAVITYFORMS_REMOVE_SPAM_URL', plugin_dir_url( __FILE__ ) );
+define( 'GRAVITYFORMS_REMOVE_SPAM_DIR', plugin_dir_path( __FILE__ ) );
+define( 'GRAVITYFORMS_REMOVE_SPAM_PLUGIN_DIRNAME', basename( rtrim( dirname( __FILE__ ), '/' ) ) );
 
 // Check PHP min version
-if ( version_compare( PHP_VERSION, BEA_GF_REMOVE_SPAM_MIN_PHP_VERSION, '<' ) ) {
-	require_once BEA_GF_REMOVE_SPAM_DIR . 'compat.php';
+if ( version_compare( PHP_VERSION, GRAVITYFORMS_REMOVE_SPAM_MIN_PHP_VERSION, '<' ) ) {
+	require_once GRAVITYFORMS_REMOVE_SPAM_DIR . 'compat.php';
 
 	// possibly display a notice, trigger error
-	add_action( 'admin_init', [ 'BEA\GF_Remove_Spam\Compatibility', 'admin_init' ] );
+	add_action( 'admin_init', [ 'Gravityforms\Remove_Spam\Compatibility', 'admin_init' ] );
 
 	// stop execution of this file
 	return;
@@ -63,11 +63,11 @@ add_action( 'admin_init', function() {
 
 		add_action( 'admin_notices', function() {
 			if ( ! class_exists( 'GFForms' ) ) {
-				echo '<div class="notice notice-error"><p>' . esc_html__( 'The Gravity Forms plugin is required to use BEA GF Remove Spam. Please install and activate it.', 'bea-gf-remove-spam' ) . '</p></div>';
+				echo '<div class="notice notice-error"><p>' . esc_html__( 'The Gravity Forms plugin is required to use BEA GF Remove Spam. Please install and activate it.', 'gravityforms-remove-spam' ) . '</p></div>';
 			}
 			
 			if ( ! function_exists( 'acf_add_options_sub_page' ) ) {
-				echo '<div class="notice notice-error"><p>' . esc_html__( 'The ACF PRO plugin is required to use BEA GF Remove Spam. Please install and activate it.', 'bea-gf-remove-spam' ) . '</p></div>';
+				echo '<div class="notice notice-error"><p>' . esc_html__( 'The ACF PRO plugin is required to use Gravity Forms Remove Spam. Please install and activate it.', 'gravityforms-remove-spam' ) . '</p></div>';
 			}
 		} );
 	}
@@ -76,16 +76,16 @@ add_action( 'admin_init', function() {
 /**
  * Autoload all the things \o/
  */
-require_once BEA_GF_REMOVE_SPAM_DIR . 'compat.php';
-require_once BEA_GF_REMOVE_SPAM_DIR . 'classes/singleton.php';
-require_once BEA_GF_REMOVE_SPAM_DIR . 'classes/main.php';
-require_once BEA_GF_REMOVE_SPAM_DIR . 'classes/parser.php';
+require_once GRAVITYFORMS_REMOVE_SPAM_DIR . 'compat.php';
+require_once GRAVITYFORMS_REMOVE_SPAM_DIR . 'classes/singleton.php';
+require_once GRAVITYFORMS_REMOVE_SPAM_DIR . 'classes/main.php';
+require_once GRAVITYFORMS_REMOVE_SPAM_DIR . 'classes/parser.php';
 
-add_action( 'plugins_loaded', 'init_bea_gf_remove_spam_plugin' );
+add_action( 'plugins_loaded', 'init_gravityforms_remove_spam_plugin' );
 
 add_action( 'plugins_loaded', function() {
     load_plugin_textdomain(
-        'bea-gf-remove-spam',
+        'gravityforms-remove-spam',
         false,
         dirname( plugin_basename( __FILE__ ) ) . '/languages'
     );
@@ -94,12 +94,12 @@ add_action( 'plugins_loaded', function() {
 /**
  * Init the plugin
  */
-function init_bea_gf_remove_spam_plugin() {
+function init_gravityforms_remove_spam_plugin() {
 	if ( ! class_exists( 'GFForms' ) ) {
 		return;
 	}
 
-	\BEA\GF_Remove_Spam\Main::get_instance();
-	\BEA\GF_Remove_Spam\Parser::get_instance();
+	\Gravityforms\Remove_Spam\Main::get_instance();
+	\Gravityforms\Remove_Spam\Parser::get_instance();
 }
 

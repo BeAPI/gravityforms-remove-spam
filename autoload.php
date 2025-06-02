@@ -1,5 +1,5 @@
 <?php
-namespace BEA\GF_Remove_Spam;
+namespace Gravityforms\Remove_Spam;
 
 /**
  * An example of a general-purpose implementation that includes the optional
@@ -193,4 +193,4 @@ $loader = new Autoloader;
 $loader->register();
 
 // register the base directories for the namespace prefix
-$loader->addNamespace( 'BEA\GF_Remove_Spam', BEA_GF_REMOVE_SPAM_DIR . 'classes' );
+$loader->addNamespace( 'Gravityforms\Remove_Spam', GRAVITYFORMS_REMOVE_SPAM_DIR . 'classes' );

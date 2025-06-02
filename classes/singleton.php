@@ -1,5 +1,5 @@
 <?php
-namespace BEA\GF_Remove_Spam;
+namespace Gravityforms\Remove_Spam;
 
 /**
  * Singleton base class for having singleton implementation
@@ -10,7 +10,7 @@ namespace BEA\GF_Remove_Spam;
  * /!\ The get_instance method have to be implemented !
  *
  * Class Singleton
- * @package BEA\GF_Remove_Spam
+ * @package Gravityforms\Remove_Spam
  */
 trait Singleton {
 

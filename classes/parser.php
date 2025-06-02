@@ -1,6 +1,6 @@
 <?php
 
-namespace BEA\GF_Remove_Spam;
+namespace Gravityforms\Remove_Spam;
 
 class Parser {
 	/**

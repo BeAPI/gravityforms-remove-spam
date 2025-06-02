@@ -1,4 +1,4 @@
-# BEA GF Remove Spam for Gravity Forms
+# Gravity Forms Remove Spam for Gravity Forms
 
 **Version:** 1.0.0  
 **Author:** Be API Technical team  
@@ -6,7 +6,7 @@
 
 ## Description
 
-**BEA GF Remove Spam** is a WordPress plugin that automatically deletes submissions considered as spam in Gravity Forms. Administrators can define, via an ACF options page, lists of email addresses and links considered as spam. Any entry matching these criteria is automatically deleted.
+**Gravity Forms Remove Spam** is a WordPress plugin that automatically deletes submissions considered as spam in Gravity Forms. Administrators can define, via an ACF options page, lists of email addresses and links considered as spam. Any entry matching these criteria is automatically deleted.
 
 ## Features
 
@@ -36,7 +36,7 @@
 **Via Composer:**
 
 ```
-composer require beapi/remove-spam
+composer require gravityforms/remove-spam
 ```
 
 ## Configuration

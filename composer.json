@@ -1,8 +1,8 @@
 {
-    "name": "beapi/remove-spam",
-    "description": "Remove spam entries from GravityForms based on option fields",
+    "name": "beapi/gravityforms-remove-spam",
+    "description": "Remove spam entries from Gravity Forms based on option fields",
     "type": "wordpress-plugin",
-    "homepage": "https://github.com/BeAPI/remove-spam",
+    "homepage": "https://github.com/BeAPI/gravityforms-remove-spam",
     "license": "GPL-2.0-or-later",
     "authors": [
       {
@@ -62,8 +62,8 @@
       }
     },
     "support": {
-      "issues": "https://github.com/BeAPI/remove-spam/issues",
-      "source": "https://github.com/BeAPI/remove-spam"
+      "issues": "https://github.com/BeAPI/gravityforms-remove-spam/issues",
+      "source": "https://github.com/BeAPI/gravityforms-remove-spam"
     },
     "keywords": [
       "wordpress",

@@ -1,6 +1,6 @@
 <?php
 
-namespace BEA\GF_Remove_Spam;
+namespace Gravityforms\Remove_Spam;
 
 class Compatibility {
 	/**
@@ -20,12 +20,12 @@ class Compatibility {
 		}
 
 		// Load the textdomain
-		load_plugin_textdomain( 'bea-gf-remove-spam', false, BEA_GF_REMOVE_SPAM_PLUGIN_DIRNAME . '/languages' );
+		load_plugin_textdomain( 'gravityforms-remove-spam', false, GRAVITYFORMS_REMOVE_SPAM_PLUGIN_DIRNAME . '/languages' );
 
-		trigger_error( sprintf( __( 'Plugin Boilerplate requires PHP version %s or greater to be activated.', 'bea-gf-remove-spam' ), BEA_GF_REMOVE_SPAM_MIN_PHP_VERSION ) );
+		trigger_error( sprintf( __( 'Plugin Boilerplate requires PHP version %s or greater to be activated.', 'gravityforms-remove-spam' ), GRAVITYFORMS_REMOVE_SPAM_MIN_PHP_VERSION ) );
 
 		// Deactive self
-		deactivate_plugins( BEA_GF_REMOVE_SPAM_DIR . 'bea-gf-remove-spam.php' );
+		deactivate_plugins( GRAVITYFORMS_REMOVE_SPAM_DIR . 'gravityforms-remove-spam.php' );
 
 		unset( $_GET['activate'] );
 
@@ -37,7 +37,7 @@ class Compatibility {
 	 */
 	public static function admin_notices() {
 		echo '<div class="notice error is-dismissible">';
-		echo '<p>' . esc_html( sprintf( __( 'Plugin Boilerplate require PHP version %s or greater to be activated. Your server is currently running PHP version %s.', 'bea-gf-remove-spam' ), BEA_GF_REMOVE_SPAM_MIN_PHP_VERSION, PHP_VERSION ) ) . '</p>';
+		echo '<p>' . esc_html( sprintf( __( 'Plugin Boilerplate require PHP version %s or greater to be activated. Your server is currently running PHP version %s.', 'gravityforms-remove-spam' ), GRAVITYFORMS_REMOVE_SPAM_MIN_PHP_VERSION, PHP_VERSION ) ) . '</p>';
 		echo '</div>';
 	}
 }

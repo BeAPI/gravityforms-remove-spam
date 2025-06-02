@@ -1,6 +1,6 @@
 <?php
 
-namespace BEA\GF_Remove_Spam;
+namespace Gravityforms\Remove_Spam;
 
 /**
  * The purpose of the main class is to init all the plugin base code like :
@@ -11,7 +11,7 @@ namespace BEA\GF_Remove_Spam;
  *  - Loading the text domain
  *
  * Class Main
- * @package BEA\GF_Remove_Spam
+ * @package Gravityforms\Remove_Spam
  */
 class Main {
 	/**
@@ -35,7 +35,7 @@ class Main {
 	 */
 	public function init_translations() {
 		// Load translations
-		\load_plugin_textdomain( 'bea-gf-remove-spam', false, BEA_GF_REMOVE_SPAM_PLUGIN_DIRNAME . '/languages' );
+		\load_plugin_textdomain( 'gravityforms-remove-spam', false, GRAVITYFORMS_REMOVE_SPAM_PLUGIN_DIRNAME . '/languages' );
 	}
 
 	/**
@@ -66,7 +66,7 @@ class Main {
 		foreach ( $fields as $field ) {
 			$field_path = sprintf(
 				'%s/%s.php',
-				BEA_GF_REMOVE_SPAM_DIR . 'assets/acf/php',
+				GRAVITYFORMS_REMOVE_SPAM_DIR . 'assets/acf/php',
 				$field
 			);
 
