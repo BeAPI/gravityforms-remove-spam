@@ -1,6 +1,6 @@
 # Gravity Forms Remove Spam for Gravity Forms
 
-**Version:** 1.0.3
+**Version:** 1.0.4
 
 **Author:** Be API Technical team  
 
