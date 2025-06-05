@@ -4,7 +4,7 @@ Plugin Name: Gravity Forms Remove Spam
 Version: 1.0.3
 Version Boilerplate: 2.2
 Plugin URI: https://beapi.fr
-Description: Remove spam entries from Gravity Forms based on option fields
+Description: Remove spam entries from Gravity Forms based on option fields - sponsored by CDC Habitat
 Author: Be API Technical team
 Author URI: https://beapi.fr
 Domain Path: languages

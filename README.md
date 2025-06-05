@@ -67,3 +67,4 @@ On the **Spam** options page:
 ## License
 
 This plugin is licensed under the GPLv2 or later. 
+The development of this plugin is sponsored by CDC Habitat, a leading provider of social housing in France.
