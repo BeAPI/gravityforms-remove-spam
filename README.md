@@ -1,7 +1,9 @@
 # Gravity Forms Remove Spam for Gravity Forms
 
 **Version:** 1.0.3
+
 **Author:** Be API Technical team  
+
 **Plugin URI:** https://beapi.fr
 
 ## Description
@@ -65,3 +67,4 @@ On the **Spam** options page:
 ## License
 
 This plugin is licensed under the GPLv2 or later. 
+The development of this plugin is sponsored by CDC Habitat, a leading provider of social housing in France.
